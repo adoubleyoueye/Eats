@@ -60,22 +60,13 @@ def handle_view_events(ack, body, logger):
 ```  
 7. 
 
-
-
 ## :japanese_castle: Architectural Decisions ##
 
 ## :triangular_ruler: Technologies ##
 
-## :white_check_mark: Requirements ##
-
-- The Slack bot will send messages to remind user to drink water periodically
-- User can choose when the reminder will be triggered
-- Start time (e.g. 9 AM)
-- End time (e.g. 5 PM)
-- Time interval (e.g. every 2hrs)
-
-
-
+- Django
+- Slack w/ Bolt
+- 
 ## :checkered_flag: Starting ##
 
 ```bash
