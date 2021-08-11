@@ -1,12 +1,13 @@
 <h1 align="center">Eats :hamburger:</h1>
 
-### :dart: About ##
+### :dart: About ###
 
 A Slack bot which takes the food order for the day. As many of us use Slack on a daily basis for work, school, or personal use, we want to use Slack to help us automate the process to track employee food purchases and manage balances instead of manually updating a spreadsheet on a daily basis.
 
 > “Toil is the kind of work that tends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows.” - [Eric Harvieux: Identifying and tracking toil using SRE principles](https://cloud.google.com/blog/products/management-tools/identifying-and-tracking-toil-using-sre-principles)
 
-There aren't a lot of steps to set-up a meal allowance; we can break it down into two steps.
+Basic steps to set-up a meal allowance; we can break it down into two steps.
+
 - Step 1: Determine how much you want to offer your people and within what timeframe.
   - #### Examples below referenced from [compt.io](https://www.compt.io/meal-allowance-food-stipend-guide#examples)
   - > MasterClass offers their employees $120/month as an interim snack stipend
@@ -17,6 +18,7 @@ There aren't a lot of steps to set-up a meal allowance; we can break it down int
     -  e.g. Google forms to track submissions or an excel spreadsheet
    - Using [Eats](https://github.com/adoubleyoueye/Eats) :relaxed: :sunglasses:
 
+#### How does it work
 
 ## :japanese_castle: Architectural Decisions ##
 
