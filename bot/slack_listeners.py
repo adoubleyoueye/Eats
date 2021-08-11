@@ -104,8 +104,21 @@ def handle_view_events(ack, body, logger):
     for v in form_values.values():
         modal_values.append(v['plain_text_input-action']['value'])
     modal_data = zip(modal_fields, modal_values)
+    logger.info(response_data)
+
+    create_order(user_id, team_id,
+                 modal_values[0], modal_values[1], modal_values[2])
+
+
+def create_order(slack_user_id, slack_team_id, item, price, restaurant):
     try:
-        Order.objects.create(
-            user_id, team_id, item=modal_values[0], price=modal_values[1], restaurant=modal_values[2])
+        price = round(float(price), 2)
     except Exception as e:
-        pass  # for now
+        logger.info(e)
+        price = 0
+    try:
+        order = Order(user_id=slack_user_id, team_id=slack_team_id,
+                      item=item, price=price, restaurant=restaurant)
+        order.save()
+    except Exception as e:
+        logger.info(e)
