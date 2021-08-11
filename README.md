@@ -90,12 +90,18 @@ $ git clone repo
 
 ## Tests ##
 
+-
+
 ## Deployment checklist ##
 - `Run manage.py check --deploy`
 
 
 ## :busstop: Roadmap ##
-
+- [ ] Tests Tests Tests (say that 10x fast)
+- [ ] Write class method to perform basic arithmetic e.g. total spent, amount remaining
+- [ ] Create an interaction where the user can view orders from the past fortnight.
+- [ ] Create shortcut for user to correct past orders.
+- [ ] Admin dashboard insights
 - [ ] Dockerise app
 - [ ] Publish Single Workspace Instance as v1.0.0
 - [ ] Publish Public Distribution version: Share *Eats* with other Workspaces (OAuth config)
@@ -103,7 +109,6 @@ $ git clone repo
 
 ## :blue_book: References
 
-- [Codementor](https://www.codementor.io/projects/tool/slack-bot-drink-water-reminder-atx32cnbx1)
 - [Slack API documentation](https://api.slack.com/)
 
 
