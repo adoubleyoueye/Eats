@@ -63,6 +63,17 @@ def handle_view_events(ack, body, logger):
 
 ## :japanese_castle: Architectural Decisions ##
 
+- ### Context
+
+- ### Facing
+
+- ### Decided on
+
+- ### and Neglected
+
+- ### to Achieve
+
+- ### ...
 ## :triangular_ruler: Technologies ##
 
 - Django
