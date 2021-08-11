@@ -23,7 +23,8 @@ Basic steps to set-up a meal allowance; we can break it down into two steps.
 
 #### The Flow of Interactions 
 1. User clicks *Lunch Order* shortcut.
-2. Event listener sends modal view as [json](./assets/lunch_order_view/json) 
+![](./assets/command.png)
+3. Event listener sends modal view as [json](./assets/lunch_order_view/json) 
 
 ```python 
 @app.shortcut("create_order")
