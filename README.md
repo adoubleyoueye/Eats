@@ -6,7 +6,7 @@ A Slack bot which takes the food order for the day. As many of us use Slack on a
 > “Toil is the kind of work that tends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows.” - [Eric Harvieux: Identifying and tracking toil using SRE principles](https://cloud.google.com/blog/products/management-tools/identifying-and-tracking-toil-using-sre-principles)
 
 
-<img src="./assets/modal.png"/>
+<img id="top" src="./assets/modal.png"/>
 
 
 Basic steps to set-up a meal allowance; we can break it down into two steps.
@@ -21,7 +21,44 @@ Basic steps to set-up a meal allowance; we can break it down into two steps.
     -  e.g. Google forms to track submissions or an excel spreadsheet
    - Using [Eats](https://github.com/adoubleyoueye/Eats) :relaxed: :sunglasses:
 
-#### How does it work
+#### The Flow of Interactions 
+1. User clicks *Lunch Order* shortcut.
+2. Event listener sends modal view as [json](./assets/lunch_order_view/json) 
+
+```python 
+@app.shortcut("create_order")
+def open_modal(ack, shortcut, client):
+    # Acknowledge the shortcut request
+    ack()
+    # Call the views_open method using the built-in WebClient
+    client.views_open(
+        trigger_id=shortcut["trigger_id"],
+        # A simple view payload for a modal
+        # view=SLACK_ORDER_BLOCK
+        view={go to assets folder to see}
+```
+3. Shortcut triggers a modal as shown [here](#top).
+4. User inputs the item, price and restuarant [or a SQL statement :wink:] then hits submit which sends a POST request to our app. 
+5. Payload sent back to the server as json
+6. The body of that request will contain a interaction payload parameter, 'view_submission' which contains the values we need. The app parses this payload parameter as JSON.
+```@app.view("")
+def handle_view_events(ack, body, logger):
+    ack()
+    response_data = body
+    team_id = response_data['user']['team_id']
+    user_id = response_data['user']['id']
+    form_values = response_data['view']['state']['values']
+    modal_values = []
+    for v in form_values.values():
+        modal_values.append(v['plain_text_input-action']['value'])
+    # modal_fields = ['item', 'price', 'restaurant']
+    # modal_data = zip(modal_fields, modal_values)
+    logger.info(modal_data)
+
+    create_order(user_id, team_id,
+                 modal_values[0], modal_values[1], modal_values[2])
+```  
+7. 
 
 
 
