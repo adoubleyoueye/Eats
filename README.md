@@ -1,10 +1,13 @@
 <h1 align="center">Eats :hamburger:</h1>
 
 ### :dart: About ###
-
 A Slack bot which takes the food order for the day. As many of us use Slack on a daily basis for work, school, or personal use, we want to use Slack to help us automate the process to track employee food purchases and manage balances instead of manually updating a spreadsheet on a daily basis.
 
 > “Toil is the kind of work that tends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows.” - [Eric Harvieux: Identifying and tracking toil using SRE principles](https://cloud.google.com/blog/products/management-tools/identifying-and-tracking-toil-using-sre-principles)
+
+
+<img src="./assets/modal.png"/>
+
 
 Basic steps to set-up a meal allowance; we can break it down into two steps.
 
@@ -19,6 +22,8 @@ Basic steps to set-up a meal allowance; we can break it down into two steps.
    - Using [Eats](https://github.com/adoubleyoueye/Eats) :relaxed: :sunglasses:
 
 #### How does it work
+
+
 
 ## :japanese_castle: Architectural Decisions ##
 
