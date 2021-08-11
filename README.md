@@ -93,6 +93,14 @@ $ git clone repo
 ## Deployment checklist ##
 - `Run manage.py check --deploy`
 
+
+## :busstop: Roadmap ##
+
+- [ ] Dockerise app
+- [ ] Publish Single Workspace Instance as v1.0.0
+- [ ] Publish Public Distribution version: Share *Eats* with other Workspaces (OAuth config)
+- [ ] Publish to [Slack App Directory](https://slack.com/apps)
+
 ## :blue_book: References
 
 - [Codementor](https://www.codementor.io/projects/tool/slack-bot-drink-water-reminder-atx32cnbx1)
@@ -103,8 +111,4 @@ $ git clone repo
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
-
 Made with :heart:
-
-This is an open source project from [DevProjects](http://www.codementor.io/projects). Feedback and questions are welcome!
-Find the project requirements here: [Slack bot: drink water reminder](https://www.codementor.io/projects/tool/slack-bot-drink-water-reminder-atx32cnbx1)
