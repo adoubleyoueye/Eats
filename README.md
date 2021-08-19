@@ -1,5 +1,7 @@
 <h1 align="center">Eats :hamburger:</h1>
 
+![example workflow](https://github.com/adoubleyoueye/Eats/actions/workflows/main.yml/badge.svg)
+
 ### :dart: About ###
 A Slack bot which takes the food order for the day. As many of us use Slack on a daily basis for work, school, or personal use, we want to use Slack to help us automate the process to track employee food purchases and manage balances instead of manually updating a spreadsheet on a daily basis.
 
