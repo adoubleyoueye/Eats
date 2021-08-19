@@ -60,7 +60,7 @@ def handle_view_events(ack, body, logger):
                  modal_values[0], modal_values[1], modal_values[2])
 ```  
 7. 
-
+<!--
 ## :japanese_castle: Architectural Decisions ##
 
 - ### Context
@@ -90,7 +90,7 @@ $ git clone repo
 
 # The server will initialize on ...
 ```
-
+-->
 ## Tests ##
 
 -
